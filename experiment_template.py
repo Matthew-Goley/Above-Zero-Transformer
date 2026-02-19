@@ -12,7 +12,7 @@ TRAINING_CONFIG = {
     "window": 24,
     "seq_len": 48,
     "batch_size": 32,
-    "epochs": 25,
+    "epochs": 10,
     "learning_rate": 1e-3
 }
 
