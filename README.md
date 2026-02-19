@@ -4,10 +4,7 @@
 This is a transformer based model trained to predict whether returns after x hours will be positive or negative, given y hours of previous history
 The model is given log returns, and the OHLCV
 
-# Architecture
- - Transformer Encoder
- - Weighted BCE
- - Dropout
+
 
 # How to use the model:
  - First run this in your terminal to ensure all dependencies are fulfilled:
@@ -41,6 +38,10 @@ The model is given log returns, and the OHLCV
  - - specifically the validation set has a lack of data
  - - The inputs to the model are too simple and don't give the model enough data
  - - Actual signal engineering could massively help with this
+
+# Architecture
+
+![Architecture](assets/architecture.png)
 
 # How does this model work?
  - This model uses a transformer encoder architecture designed for sequence modeling
