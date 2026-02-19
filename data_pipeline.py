@@ -1,3 +1,10 @@
+# TO RUN THE PROJECT GO TO experiment_template.py
+# This script takes the raw data from the CSV and does the following:
+# Computes features
+# Creates rolling sequences
+# Splits sets into training and validation
+# Values are all taken from experiment_template.py
+
 import pandas as pd
 import numpy as np
 from pathlib import Path

@@ -1,3 +1,7 @@
+# TO RUN THE PROJECT GO TO experiment_template.py
+# This is the main file that calls the model, runs training and evaluation and backprops for better accuracy
+# Values for this file are pulled from experiment_template.py
+
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader

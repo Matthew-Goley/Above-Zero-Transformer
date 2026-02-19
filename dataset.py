@@ -1,3 +1,6 @@
+# TO RUN THE PROJECT GO TO experiment_template.py
+# This is the class called to create tensors
+
 import torch
 from torch.utils.data import Dataset
 

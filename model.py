@@ -1,3 +1,7 @@
+# TO RUN THE PROJECT GO TO experiment_template.py
+# This is the Class that defines the Transformer Model
+# Values are all taken from experiment_template.py
+
 import torch
 import torch.nn as nn
 

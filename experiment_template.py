@@ -1,3 +1,7 @@
+# This is the main file
+# Run this file to run the project
+# Use this file to change values
+
 from train import run_experiment
 
 MODEL_CONFIG = {
