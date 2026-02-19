@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pt
+*.pth
+venv/
+.env
+results.csv
