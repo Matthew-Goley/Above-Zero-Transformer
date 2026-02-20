@@ -4,5 +4,5 @@ __pycache__/
 *.pth
 venv/
 .env
-results.md
+results.csv
 AAPL.csv
