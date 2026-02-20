@@ -63,8 +63,8 @@ The model is given log returns, and the OHLCV
  - - The transformer encoder then feeds that data through self attention and FFN, we already know this
  - - The classifier head is just a final nn.Linear(32,1) at the end of the pipeline. This is just the final output of the transformer
 
-# 5 things I learned from this project:
- - How transformers work
+# Key Takeaways:
+ - Dropout can help reduce overfitting when looking for complex patterns on limited data
  - How transformers process data
  - Overfitting is a primary challenge in this project
  - How to split projects into different scripts and call them
