@@ -6,9 +6,12 @@ The model is given log returns, and the OHLCV
 
 
 
-# How to use the model:
- - First run this in your terminal to ensure all dependencies are fulfilled:
- - - pip install pandas numpy torch
+# Setup:
+ - First run this in your terminal to ensure all dependencies are fulfilled and the virtual environment is created:
+ - - python -m venv venv
+ - - venv\Scripts\activate
+ - - pip install -r requirements.txt
+ - - python experiment_template.py
  - Go to experiment_template.py and run the file, all other scripts will run as needed
  - Ensure that AAPL.csv is in the same folder as all other scripts
  - To change the training windows:
@@ -19,7 +22,7 @@ The model is given log returns, and the OHLCV
  - Change the Epochs variable to alter how many times the model runs and backprops
  - - Recommended Epochs is ~50 (diminishing returns will occur after that)
 
-# How to interpret the output of the model:
+# Output of the model:
  - The first print will be the binary positive rate of the target for the train and validation sets
  - - It's important to understand that the model is split between two sets, training and validation
  - - Training is what the model runs and backprops on
