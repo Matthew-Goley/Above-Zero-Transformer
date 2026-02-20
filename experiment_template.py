@@ -16,8 +16,9 @@ TRAINING_CONFIG = {
     "window": 24,
     "seq_len": 48,
     "batch_size": 32,
-    "epochs": 10,
-    "learning_rate": 1e-3
+    "epochs": 50,
+    "learning_rate": 1e-3,
+    "weight_decay": 0
 }
 
 if __name__ == "__main__":

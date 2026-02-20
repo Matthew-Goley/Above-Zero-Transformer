@@ -22,6 +22,7 @@ def run_experiment(model_config, training_config):
     batch_size = training_config["batch_size"]
     epochs = training_config["epochs"]
     learning_rate = training_config["learning_rate"]
+    weight_decay = training_config["weight_decay"]
 
     # prepare data
     df, model_df = ComputeDataAAPL(window=window)
@@ -63,7 +64,10 @@ def run_experiment(model_config, training_config):
     )
 
     criterion = nn.BCEWithLogitsLoss(pos_weight=pos_weight)
-    optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+    optimizer = torch.optim.Adam(
+        model.parameters(),
+        lr=learning_rate,
+        weight_decay=weight_decay)
 
     # training
 
