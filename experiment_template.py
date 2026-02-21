@@ -6,15 +6,15 @@ from train import run_experiment
 
 MODEL_CONFIG = {
     "feature_dim": 6,
-    "d_model": 32,
+    "d_model": 16,
     "num_heads": 4,
-    "num_layers": 2,
+    "num_layers": 1,
     "dropout": 0.2
 }
 
 TRAINING_CONFIG = {
     "window": 24,
-    "seq_len": 48,
+    "seq_len": 24,
     "batch_size": 32,
     "epochs": 50,
     "learning_rate": 1e-3,
