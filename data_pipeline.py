@@ -38,6 +38,11 @@ def ComputeDataAAPL(window):
     df["log_volume"] = np.log(df["volume"] + 1)
     df = df.dropna(subset=["log_volume"])
 
+
+
+
+    
+
     # debug
     assert df.isna().sum().sum() == 0
 

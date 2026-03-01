@@ -56,6 +56,12 @@ def run_experiment(model_config, training_config):
     )
     model.to(device)
 
+    total_params = sum(p.numel() for p in model.parameters())
+    trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
+
+    print(f"Total Parameters: {total_params:,}")
+    print(f"Trinable Parameters: {trainable_params:,}")
+
     # loss and optimizer
     pos_weight = torch.tensor(
         [(len(y_train) - y_train.sum()) / y_train.sum()],
